@@ -99,19 +99,19 @@ public class RegisterStepdefinition extends Baseclass {
 
 	@When("^user enter the homephone as \"([^\"]*)\"$")
 	public void user_enter_the_homephone_as(String arg1) throws Throwable {
-		inputValueElement(pom.getR().getHphone(), "(589)839-2348");
+		inputValueElement(pom.getR().getHphone(), "(589)839-2898");
 
 	}
 
 	@When("^user enter the mobilephone as \"([^\"]*)\"$")
 	public void user_enter_the_mobilephone_as(String arg1) throws Throwable {
-		inputValueElement(pom.getR().getMphone(), "(556)579-2898");
+		inputValueElement(pom.getR().getMphone(), "(556)579-2788");
 
 	}
 
 	@When("^user enter the workphone as \"([^\"]*)\"$")
 	public void user_enter_the_workphone_as(String arg1) throws Throwable {
-		inputValueElement(pom.getR().getWphone(), "(559)069-3448");
+		inputValueElement(pom.getR().getWphone(), "(559)069-9848");
 
 	}
 

@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 11, 2020 06:26:17 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 29, 2020 06:48:46 PM</span>
 				</a>
 			</li>
 			<li>
@@ -155,10 +155,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='10%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='3.333%'><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='83.333%'>25</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='90%'>27</span> others
 				</div>
 			</div>
 		</div>
@@ -175,46 +175,29 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Overall functionality of dbank application</span>
-						<span class='test-time'>Nov 11, 2020 06:26:18 PM</span>
+						<span class='test-time'>Nov 29, 2020 06:48:47 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 2m 37s+267ms</span>
+	<span class='duration right label'>0h 0m 48s+944ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">user wants to sign up the application</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node given fail' status='fail'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given user needs to sign up the application</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='4' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When user click the signup here option</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node and fail' status='fail'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And user select the title as "Mr"</span>
-				<div class='pre'><textarea>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=86.0.4240.193)
+				<div class='pre'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'NITHI', ip: '192.168.173.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:1133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
-*** Element info: {Using=xpath, value=//select[@id='title']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:2814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54ade74d12e5891123cca125ec922221
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -225,18 +208,27 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
-	at com.CucumberDbank.baseclass.Baseclass.Dropdown(Baseclass.java:89)
-	at com.CucumberDbank.stepdefinition.RegisterStepdefinition.user_select_the_title_as(RegisterStepdefinition.java:22)
-	at ✽.And user select the title as "Mr"(Dbank.feature:6)
-</textarea></div>
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.CucumberDbank.baseclass.Baseclass.getUrl(Baseclass.java:53)
+	at com.CucumberDbank.stepdefinition.RegisterStepdefinition.user_needs_to_sign_up_the_application(RegisterStepdefinition.java:12)
+	at ✽.Given user needs to sign up the application(Dbank.feature:4)
+</pre></div>
+			
+		</li>
+		<li test-id='4' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user click the signup here option</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='5' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user select the title as "Mr"</span>
+				<div class='pre'>skipped</div>
 			
 		</li>
 		<li test-id='6' class='node and skip' status='skip'>
@@ -394,7 +386,7 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
 	</ul>
 </div>
 <div class='scenario node' test-id='25' status='fail'>
-	<span class='duration right label'>0h 0m 6s+131ms</span>
+	<span class='duration right label'>0h 0m 2s+582ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">user wants to make the visa transfer</span>
@@ -413,13 +405,14 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
 			<b>When</b>
 			
 			<span class="bdd-step-name">When user enter the password as "Nithi@0917"</span>
-				<div class='pre'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=86.0.4240.193)
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='password']"}
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'NITHI', ip: '192.168.173.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:1133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:2814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54ade74d12e5891123cca125ec922221
 *** Element info: {Using=xpath, value=//input[@id='password']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -550,7 +543,7 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -564,16 +557,15 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Nov 11, 2020 06:28:48 PM</td>
-                                                        <td class='linked' test-id='5'>Overall functionality of dbank application.user wants to sign up the application.And user select the title as "Mr"</td>
-                                                        <td><pre><textarea>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=86.0.4240.193)
+                                                        <td>Nov 29, 2020 06:48:48 PM</td>
+                                                        <td class='linked' test-id='3'>Overall functionality of dbank application.user wants to sign up the application.Given user needs to sign up the application</td>
+                                                        <td><pre><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'NITHI', ip: '192.168.173.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:1133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
-*** Element info: {Using=xpath, value=//select[@id='title']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:2814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54ade74d12e5891123cca125ec922221
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -584,29 +576,44 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
-	at com.CucumberDbank.baseclass.Baseclass.Dropdown(Baseclass.java:89)
-	at com.CucumberDbank.stepdefinition.RegisterStepdefinition.user_select_the_title_as(RegisterStepdefinition.java:22)
-	at ✽.And user select the title as "Mr"(Dbank.feature:6)
-</textarea></pre></td>
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.CucumberDbank.baseclass.Baseclass.getUrl(Baseclass.java:53)
+	at com.CucumberDbank.stepdefinition.RegisterStepdefinition.user_needs_to_sign_up_the_application(RegisterStepdefinition.java:12)
+	at ✽.Given user needs to sign up the application(Dbank.feature:4)
+</pre></pre></td>
                                                     </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
                                                     <tr>
-                                                        <td>Nov 11, 2020 06:28:55 PM</td>
+                                                        <td>Nov 29, 2020 06:49:36 PM</td>
                                                         <td class='linked' test-id='27'>Overall functionality of dbank application.user wants to make the visa transfer.When user enter the password as "Nithi@0917"</td>
-                                                        <td><pre><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=86.0.4240.193)
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='password']"}
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'NITHI', ip: '192.168.173.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:1133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:2814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54ade74d12e5891123cca125ec922221
 *** Element info: {Using=xpath, value=//input[@id='password']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -672,19 +679,19 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 11, 2020 06:26:17 PM</div>
+					<div class='panel-lead'>Nov 29, 2020 06:48:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 11, 2020 06:29:02 PM</div>
+			 		<div class='panel-lead'>Nov 29, 2020 06:49:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>164,955ms</div>
+					<div class='panel-lead'>52,671ms</div>
 				</div>
 			</div>
 		</div>
@@ -714,14 +721,14 @@ Session ID: d4ffa74bc0649aaefd3ac8a0cdf01c29
 				infoChild: 0,
 				exceptionsChild: 2,
 				
-				passGrandChild: 3,
+				passGrandChild: 1,
 				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 25,
+				skipGrandChild: 27,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 27,
+				exceptionsGrandChild: 29,
 			};
 		</script>
 		
